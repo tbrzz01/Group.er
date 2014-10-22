@@ -13,5 +13,5 @@ grouperApp.config(function ($routeProvider){
 			controller: 'StatsController',
 			templateUrl: 'views/stats.html'
 		})
-		.otherwise({ redirectTo: '/view1'});
+		.otherwise({ redirectTo: '/'});
 });
