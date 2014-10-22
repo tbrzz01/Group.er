@@ -3,7 +3,7 @@ var express = require('express');
 var server = express();
 server.use(express.static(__dirname + '/'));
  
-var port = 10001;
+var port = 10002;
 server.listen(port, function() {
     console.log('server listening on port ' + port);
 });
