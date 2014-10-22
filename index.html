@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html ng-app="group.er">
 	<head>
-		<script src="Scripts/angular.js" />
-		<script src="app/app.js" />
-		<script src="app/controllers/controllers.js" />
-		<script src="app/services/services.js" />
+		<script src="scripts/angular.min.js" ></script>
+		<script src="scripts/angular-route.min.js" ></script>
+		<script src="scripts/jquery-1.11.1.min.js" ></script>
+		<script src="app/app.js" ></script>
+		<script src="app/controllers/controllers.js" ></script>
+		<!-- <script src="app/services/services.js" ></script> -->
 	</head>
 	
 	<body>
 		<div id='header'>
+			<p>header</p>
+			<a href="#/views1.html">View 1</a>
+			<a href="#/stats.html">Stats</a>
 		</div>
 
-		<div view></div>
+		<div ng-view=""></div>
 
 		<div id='footer'>
+			<p>FOOTER</p>
 		</div>
 	</body>
 

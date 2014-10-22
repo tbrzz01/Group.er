@@ -1,5 +1,5 @@
 // Main controller???
-app.controller('MainController', function($scope){
+grouperApp.controller('MainController', function($scope){
 	$scope.groups = [
 		{
 			id : 1,
@@ -34,5 +34,9 @@ app.controller('MainController', function($scope){
 			insertdate : '2014-10-10'
 		}
 	];
+
+});
+
+grouperApp.controller('StatsController', function($scope){
 
 });
