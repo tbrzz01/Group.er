@@ -35,6 +35,23 @@ grouperApp.controller('MainController', function($scope){
 		}
 	];
 
+
+	function addGroup(){
+		var newGroup = {
+			id : $scope.groups.length,
+			name : 'Group ' + $scope.groups.length,
+			parentid : -1,
+			head : -1,
+			tail : -1,
+			startdate: null,
+			enddate: null,
+			insertdate: '20134-10-20'
+		};
+
+		$scope.groups.push(newGroup);
+	}
+
+	$scope.addGroup = addGroup;
 });
 
 grouperApp.controller('StatsController', function($scope){

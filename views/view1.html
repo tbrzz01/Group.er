@@ -1,8 +1,7 @@
 <div>
 	<p>View 1</p>
-	<ul class="unstyled">
-        <li ng-repeat="group in groups">
-          <input type="textarea" ng-model="group.name"></input>
-        </li>
-      </ul>
+	<div ng-repeat="group in groups" >
+    	<div class="circle" draggable="true">{{group.name}}</div>
+    </div>
+    <button ng-click="addGroup()" >Add Group</input> 
 </div>
