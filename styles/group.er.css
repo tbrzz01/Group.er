@@ -5,7 +5,41 @@
     border-radius:250px;
     font-size:20px;
     color:#fff;
-    line-height:500px;
+    line-height:100px;
     text-align:center;
     background:#000
+}
+
+.smallcircle
+{
+    width:50px;
+    height:50px;
+    border-radius:250px;
+    font-size:20px;
+    color:#fff;
+    line-height:50px;
+    text-align:center;
+    background:#000
+}
+
+[ng-drag]
+{
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+[ng-drag]
+{
+    cursor: move;
+}
+
+[ng-drop].drag-enter
+{
+    border:solid 1px red;
+}
+[ng-drag].dragging
+{
+    opacity: 0.5;
 }

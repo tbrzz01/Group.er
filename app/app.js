@@ -1,5 +1,5 @@
 
-var grouperApp = angular.module('group.er', ['ngRoute']);
+var grouperApp = angular.module('group.er', ['ngRoute', 'ngDraggable']);
 
 grouperApp.config(function ($routeProvider){
 	$routeProvider

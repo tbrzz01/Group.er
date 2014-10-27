@@ -1,7 +1,12 @@
 <div>
 	<p>View 1</p>
 	<div ng-repeat="group in groups" >
-    	<div class="circle" draggable="true">{{group.name}}</div>
+		<div >
+	    	<div class="circle" ng-drag="true" ng-drag-data="group" ng-drop="true" ng-drop-success="addToGroup(group,$event)">{{group.name}}</div>
+	    	<div>{{group.groups.length}} groups</div>
+	    	<div ng-repeat="cg in group.groups">
+	    		<div class="smallcircle">{{cg.id}}</div></div>
+    	</div>
     </div>
     <button ng-click="addGroup()" >Add Group</input> 
 </div>
